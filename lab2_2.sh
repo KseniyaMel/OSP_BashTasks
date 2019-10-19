@@ -22,7 +22,6 @@ check1()
 }
 IFS=$'\t'
 read -p 'Give me way ' way
-
 if [ -d $way ]
 	then
 	result=()
@@ -30,8 +29,7 @@ if [ -d $way ]
 		do
 		if [ -d $var ]
 			then
-			check1 $var
-		fi
+			check1 $var fi
 	done
 if [ "${#result[@]}" -ne "0" ]
 	then
