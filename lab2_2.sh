@@ -1,5 +1,4 @@
 #!/bin/bash
-
 check1()
 {
 	flag1=0
@@ -21,7 +20,6 @@ check1()
 		result+=( $name )
 	fi
 }
-
 IFS=$'\t'
 read -p 'Give me way ' way
 
@@ -42,7 +40,6 @@ if [ "${#result[@]}" -ne "0" ]
 	else
 	echo "Нет подходящего каталога"
 fi
-
 else
 echo "It isn't way"
 fi
