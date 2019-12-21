@@ -1,0 +1,11 @@
+BEGIN {
+    print "This is begin output!" 
+} 
+
+{
+    print "MAIN BLOCK" 
+} 
+
+END {
+    print "This is end output!" 
+}
